@@ -1,0 +1,91 @@
+<!Doctype HTML>
+<html lang="fr">
+	<head>
+		<title>Siam</title>
+		<meta name="description" content="Projet Web : Siam, Robé Florian & Briquet Loris"/>
+		<meta charset="UTF-8"/>
+    <script src="/script.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="\Siam.css"/>
+		<link rel="shortcut icon" href="https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2Ffavicon.ico?1605712910128"/>
+	</head>
+	<body>
+		<div class="en-tete">
+			<p class="titre"> Le jeu du Siam </p>
+			<p> Projet web de Robé Florian et Briquet Loris </p>
+			<p class="souligné"> Les règles du jeu sont disponibles <a href="https://090c4d6b-0b5d-44fc-8506-c286659df2fd.filesusr.com/ugd/92ca7d_21a266c24b9a47acb695d974b94541b5.pdf">ici</a>.</p>
+		</div>
+    <div id="menu_j">
+      <button onclick="location.reload()" id="refresh">Recommencer la partie</button>
+      <p>Joueur actif :</p>
+      <p class="j_actif_e" id="j_actif">Éléphants</p>
+      <button class = "btn2" onclick="fin_tour ()" type="button">Fin du tour</button> <!--TEMP : onclick -> le mettre avec la fonction tour fini-->
+      <p id="nb_tour">Tour n° 1</p>
+    </div>
+		<div id="plateau"> 
+      <!-- Références position éléphants/rhino -->
+      <div id="ref_e"></div>
+      <div id="ref_r"></div>
+      <!-- changement de ligne -->
+      <div class="case entr_p poss_A2 poss_B1" id="A1" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_A1 poss_B2 poss_C1" id="B1" onclick="main (this, false)"></div>
+      <div class="case entr_p2 poss_B1 poss_C2 poss_D1" id="C1" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_C1 poss_D2 poss_E1" id="D1" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_E2 poss_D1" id="E1" onclick="main (this, false)"></div>
+      <!-- changement de ligne -->
+      <div class="case entr_p poss_A3 poss_A1 poss_B2" id="A2" onclick="main (this, false)"></div>
+      <div class="case poss_A2 poss_C2 poss_B1 poss_B3" id="B2" onclick="main (this, false)"></div>
+      <div class="case poss_B2 poss_D2 poss_C1 poss_C3" id="C2" onclick="main (this, false)"></div>
+      <div class="case poss_C2 poss_E2 poss_D1 poss_D3" id="D2" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_D2 poss_E1 poss_E3" id="E2" onclick="main (this, false)"></div>
+      <!-- changement de ligne -->
+      <div class="case entr_p poss_B3 poss_A4 poss_A2" id="A3" onclick="main (this, false)"></div>
+      <div class="case poss_A3 poss_C3 poss_B2 poss_B4" id="B3" onclick="main (this, false)"></div>
+      <div class="case poss_B3 poss_D3 poss_C2 poss_C4" id="C3" onclick="main (this, false)"></div>
+      <div class="case poss_C3 poss_E3 poss_D2 poss_D4" id="D3" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_D3 poss_E2 poss_E4" id="E3" onclick="main (this, false)"></div>
+      <!-- ROCHERS -->
+      <div class="roc" id="roc1"></div>
+      <div class="roc" id="roc2"></div>
+      <div class="roc" id="roc3"></div>
+      <!-- /ROCHERS -->
+      <!-- changement de ligne -->
+      <div class="case entr_p poss_B4 poss_A3 poss_A5" id="A4" onclick="main (this, false)"></div>
+      <div class="case poss_A4 poss_B3 poss_B5 poss_C4" id="B4" onclick="main (this, false)"></div>
+      <div class="case poss_B4 poss_D4 poss_C3 poss_C5" id="C4" onclick="main (this, false)"></div>
+      <div class="case poss_C4 poss_E4 poss_D3 poss_D5" id="D4" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_E3 poss_E5 poss_D4" id="E4" onclick="main (this, false)"></div>
+      <!-- changement de ligne -->
+      <div class="case entr_p poss_A4 poss_B5" id="A5" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_A5 poss_C5 poss_B4" id="B5" onclick="main (this, false)"></div>
+      <div class="case entr_p2 poss_B5 poss_D5 poss_C4" id="C5" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_D4 poss_C5 poss_E5" id="D5" onclick="main (this, false)"></div>
+      <div class="case entr_p poss_D5 poss_E4" id="E5" onclick="main (this, false)"></div>
+      <!-- changement de ligne -->
+      <div class="eleph" id="e1" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+      <div class="eleph" id="e2" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+      <div class="eleph" id="e3" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+      <div class="eleph" id="e4" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+      <div class="eleph" id="e5" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+
+			<div class="rhino" id="r1" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+			<div class="rhino" id="r2" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+      <div class="rhino" id="r3" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+      <div class="rhino" id="r4" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+      <div class="rhino" id="r5" onclick="main (this, true)" onmouseover="hover (this)" onmouseout="out (this)"></div>
+		</div>
+    <div id="menu_a">
+      <p>1) Action :</p>
+      <button onclick="pousser ()" class="btn_a" id="pousser">Pousser</button>
+      <button onclick="rester ()" class="btn_a" id="rester">Rester</button>
+      <button onclick="sortir ()" class="btn_a" id="sortir">Sortir</button>
+      <button onclick="deselect()" class="btn_a" id="deselect">Désélectionner</button>
+    </div>
+    <div id="menu_o">
+      <p>2) Orientation :</p>
+      <button onclick="rotate ('haut')" class="btn_o" id="haut">Haut</button>
+      <button onclick="rotate ('bas')" class="btn_o" id="bas">Bas</button>
+      <button onclick="rotate ('droite')" class="btn_o" id="droite">Droite</button>
+      <button onclick="rotate ('gauche')" class="btn_o" id="gauche">Gauche</button>
+    </div>
+  </body>
+</html>

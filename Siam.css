@@ -1,0 +1,265 @@
+body {
+	background: url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2Fbackground_cut2.png?v=1607439838363") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#plateau {
+	margin : -8% auto;
+	height : 100vh; width : 66vh;
+	border : rgba(175, 120, 0, 1) solid 4px;
+	border-radius : 3px;
+  transform : rotate(90deg);
+	background-image : url("http://www.biboun.com/wp-content/uploads/2015/05/plateau-siam_x2_345x227_003.jpg");
+	background-size: contain;
+	background-position : center;
+	background-origin : border-box;
+	background-repeat: no-repeat;
+}
+
+.en-tete {
+	margin : auto;
+	background : linear-gradient(rgba(50, 130, 0, .9), rgba(160, 170, 0, .9));
+	width : 38%;
+	text-align : center;
+	border-radius : 15px;
+  font-family: sans-serif;
+}
+
+.titre {
+	font-family: "Candara";
+	font-size : 40px;
+	font-weight : bold;
+	font-variant : small-caps;
+	margin-bottom : 5px;
+}
+
+.titre:hover {text-decoration: underline;}
+
+.souligné {
+	margin-bottom : 0px;
+	font-size : 20px;
+	text-decoration: underline;
+}
+
+#menu_j, #menu_o, #menu_a {
+  background : linear-gradient(rgba(50, 130, 0, .9), rgba(160, 170, 0, .9));
+  text-align : center;
+	border-radius : 15px;
+  font-family: sans-serif;
+}
+
+#menu_j {
+  margin : auto;
+  position : absolute; top : 45%; left : 13.5%;
+  height : 18.6%; width : 8.5%;
+}
+
+.j_actif_e {
+  color : #00F;
+  font-weight : bold;
+}
+
+.j_actif_r {
+  color : #F00;
+  font-weight : bold;
+}
+
+#refresh {
+  position : absolute; top : -30%; left : 8%;
+  border : 3px inset #000;
+  border-radius : 5px;
+  color : #ddd;
+  height : 24%; width : 85%;
+  background-color : rgba(15, 100, 0, .8);
+}
+
+#menu_a {
+  position : absolute; top : 21%; left : 77.5%;
+  height : 27%; width : 8%;
+}
+
+#menu_o {
+  position : absolute; top : 51%; left : 77.5%;
+  height : 30%; width : 8%;
+}
+
+.btn_a {
+  border : 3px inset #000;
+  border-radius : 5px;
+  color : #ddd;
+  height : 19%; width : 85%;
+  background-color : rgba(15, 100, 0, .8);
+  margin-bottom : 1px;
+}
+
+.btn_o {
+  border : 3px inset #000;
+  border-radius : 5px;
+  color : #ddd;
+  height : 18%; width : 85%;
+  background-color : rgba(15, 100, 0, .8);
+  margin-bottom : 2px;
+}
+
+.btn2 {
+  border : 3px inset #000;
+  border-radius : 5px;
+  color : #ddd;
+  height : 40px; width : 100px;
+  background-color : rgba(150, 15, 0, .8);
+  margin-bottom : 1px;
+}
+
+.btn_a:hover,  {
+  transition-duration : 250ms;
+  height : 25%; width : 86%;
+}
+
+.btn_o:hover {
+  transition-duration : 250ms;
+  height : 19%; width : 86%;
+}
+
+
+.case, .roc {
+  background-size : contain;
+  background-repeat : no-repeat;
+  position : absolute;
+  height : 12%;
+	width : 18%;
+  transform : rotate(270deg);
+	border : rgba(0, 0, 255, 1) hidden 1px;
+}
+
+.eleph {
+  background-size : contain;
+  background-repeat : no-repeat;
+  position : absolute;
+  height : 12%;
+	width : 18%;
+  transform : rotate(0deg);
+	border : rgba(0, 0, 255, 1) hidden 1px;
+}
+
+.rhino {
+  background-size : contain;
+  background-repeat : no-repeat;
+  position : absolute;
+  height : 12%;
+	width : 18%;
+  transform : rotate(180deg);
+	border : rgba(0, 0, 255, 1) hidden 1px;
+}
+
+.hoverable:hover {
+  transition-duration : 250ms;
+  background-color : rgba(30, 30, 30, .3);
+  height : 11%;
+  width : 17%;
+  border : rgba(0, 150, 255, .75) solid 2px;
+  border-radius : 10px
+}
+
+.actif {
+  transition-duration : 250ms;
+  background-color : rgba(30, 30, 30, .3);
+  height : 105px;
+  width : 105px;
+  margin-top : 4px;
+  margin-left : 4px;
+  border : rgba(255, 50, 0, 1) solid 2px;
+  border-radius : 10px
+}
+
+.case_p, .entree {background-color : rgba(255, 0, 0, .40);}
+
+
+#A1 {top : 19.4%; left : 4%;}
+
+#B1 {top : 19.4%; left : 22.55%;}
+
+#C1 {top : 19.4%; left : 41.1%;}
+
+#D1 {top : 19.4%; left : 59.65%;}
+
+#E1 {top : 19.4%; left : 78.2%;}
+
+
+#A2 {top : 31.65%; left : 4%;}
+
+#B2 {top : 31.65%; left : 22.55%;}
+
+#C2 {top : 31.65%; left : 41.1%;}
+
+#D2 {top : 31.65%; left : 59.65%;}
+
+#E2 {top : 31.65%; left : 78.2%;}
+
+
+#A3 {top : 43.9%; left : 4%;}
+
+#B3 {top : 43.9%; left : 22.55%;}
+
+#C3 {top : 43.9%; left : 41.1%;}
+
+#D3 {top : 43.9%; left : 59.65%;}
+
+#E3 {top : 43.9%; left : 78.2%;}
+
+
+#A4 {top : 56.15%; left : 4%;}
+
+#B4 {top : 56.15%; left : 22.55%;}
+
+#C4 {top : 56.15%; left : 41.1%;}
+
+#D4 {top : 56.15%; left : 59.65%;}
+
+#E4 {top : 56.15%; left : 78.2%;}
+
+
+#A5 {top : 68.4%; left : 4%;}
+
+#B5 {top : 68.4%; left : 22.55%;}
+
+#C5 {top : 68.4%; left : 41.1%;}
+
+#D5 {top : 68.4%; left : 59.65%;}
+
+#E5 {top : 68.4%; left : 78.2%;}
+
+
+#e1 {top : 80.65%; left : 4%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FE_1.png?v=1605818418850");}
+
+#e2 {top : 80.65%; left : 22.5%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FE_2.png?v=1605818542666");}
+
+#e3 {top : 80.65%; left : 41.1%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FE_3.png?v=1605818971846");}
+
+#e4 {top : 80.65%; left : 59.65%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FE_4.png?v=1605818975085");}
+
+#e5 {top : 80.65%; left : 78.2%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FE_5.png?v=1605818976826");}
+
+#roc1 {top : 43.9%; left : 22.55%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FRoc_1.png?v=1605821418365");}
+
+#roc2 {top : 43.9%; left : 41.1%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FRoc_2.png?v=1605821419729");}
+
+#roc3 {top : 43.9%; left : 59.65%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FRoc_3.png?v=1605821421575");}
+
+#r1 {top : 7.15%; left : 4%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FR_1.png?v=1605820159181");}
+
+#r2 {top : 7.15%; left : 22.5%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FR_2.png?v=1605820160175");}
+
+#r3 {top : 7.15% ; left : 41.1%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FR_3.png?v=1605820162850");}
+
+#r4 {top : 7.15%; left : 59.65%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FR_4.png?v=1605820164790");}
+
+#r5 {top : 7.15%; left : 78.2%; background-image : url("https://cdn.glitch.com/d02aad1b-dcb3-44ed-a85f-1a48e4bf8a6e%2FR_5.png?v=1605820166704");}
+
+
+#ref_e {top : 80.65%;}
+
+#ref_r {top : 7.15%;}
